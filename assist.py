@@ -32,6 +32,7 @@ class MyFrame(wx.Frame):
             answer = next(res.results).text
             print(answer)
             say("The answer is "+str(answer))
+            
        	except:
             try:
                 input = input.split(' ')
@@ -52,3 +53,5 @@ if __name__ == "__main__":
     app = wx.App(True)
     frame = MyFrame()
     app.MainLoop()
+
+    #####this is the change#####
